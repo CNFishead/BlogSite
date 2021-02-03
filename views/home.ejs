@@ -1,0 +1,19 @@
+<%- include('partial/header'); -%>
+
+<h1>Home</h1>
+<p><%= homeText %></p>
+<%# Create a for loop, set it to the array (posts.lenght) %>
+<% for (var i = 0; i < posts.length; i++){ %>
+  <div class="">
+    <!-- at each iteration the value [i] should tap into the array at index [i] -->
+    <!-- and get the appropriate value to display in the text, thus rendering a -->
+    <!-- blog post -->
+    <h3><a href="/posts/<%= posts[i].title %>"><%= posts[i].title %></a></h3>
+    <p><%= posts[i].post.substring(0, 120) + "..." %></p>
+  </div>
+<%  } %>
+
+
+
+
+<%- include('partial/footer'); -%>

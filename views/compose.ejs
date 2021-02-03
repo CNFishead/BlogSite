@@ -1,0 +1,23 @@
+<%- include('partial/header'); -%>
+
+  <h1>Compose</h1>
+  <!-- enable bootstrap by wrapping form in a div with class form-group -->
+  <div class="form-group">
+    <form class="" action="/compose" method="post">
+      <!-- create a label for title and the input box, apply bootstrap CSS -->
+      <label for="title" class="form-label">Title</label>
+      <input id = "title" type="text" name="blogPostTitle" value="" placeholder="Title" class="form-control">
+
+      <!-- create a label for title and the input box, apply bootstrap CSS -->
+      <label for="post" class="form-label">Body</label>
+      <textarea id = "post" name="blogPost" rows="8" cols="80" class="form-control" placeholder="Blog here..."></textarea>
+
+      <!-- create submit button -->
+      <button type="submit" name="button" class="btn btn-primary btn-lg">Publish</button>
+    </form>
+  </div>
+
+
+
+
+<%- include('partial/footer'); -%>
